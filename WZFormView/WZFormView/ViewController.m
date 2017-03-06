@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WZShowViewController.h"
 
 @interface ViewController ()
 
@@ -47,11 +48,12 @@
 
 -(void)gotoShowVC:(UIButton*)bton
 {
-    if(bton.tag == 801)
+    if(bton.tag == 800)
     {
-        
+        WZShowViewController* Vc = [[WZShowViewController alloc] init];
+        [self.navigationController pushViewController:Vc animated:YES];
     }
-    else if (bton.tag == 802)
+    else if (bton.tag == 801)
     {
         
     }

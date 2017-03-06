@@ -13,6 +13,10 @@
 		B62D63111E695DAC003EE7ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62D630F1E695DAC003EE7ED /* Main.storyboard */; };
 		B62D63131E695DAC003EE7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62D63121E695DAC003EE7ED /* Assets.xcassets */; };
 		B62D63161E695DAC003EE7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62D63141E695DAC003EE7ED /* LaunchScreen.storyboard */; };
+		B62D63231E6D0185003EE7ED /* WZShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62D63221E6D0185003EE7ED /* WZShowViewController.m */; };
+		B62D63271E6D021D003EE7ED /* WZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B62D63261E6D021D003EE7ED /* WZModel.m */; };
+		B62D632A1E6D0244003EE7ED /* WZView.m in Sources */ = {isa = PBXBuildFile; fileRef = B62D63291E6D0244003EE7ED /* WZView.m */; };
+		B62D632D1E6D0263003EE7ED /* WZViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B62D632C1E6D0263003EE7ED /* WZViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		B62D63171E695DAC003EE7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62D631D1E69638B003EE7ED /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B62D631E1E69655C003EE7ED /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		B62D63211E6D0185003EE7ED /* WZShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZShowViewController.h; sourceTree = "<group>"; };
+		B62D63221E6D0185003EE7ED /* WZShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZShowViewController.m; sourceTree = "<group>"; };
+		B62D63251E6D021D003EE7ED /* WZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZModel.h; sourceTree = "<group>"; };
+		B62D63261E6D021D003EE7ED /* WZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZModel.m; sourceTree = "<group>"; };
+		B62D63281E6D0244003EE7ED /* WZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZView.h; sourceTree = "<group>"; };
+		B62D63291E6D0244003EE7ED /* WZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZView.m; sourceTree = "<group>"; };
+		B62D632B1E6D0263003EE7ED /* WZViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZViewModel.h; sourceTree = "<group>"; };
+		B62D632C1E6D0263003EE7ED /* WZViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,9 @@
 				B62D630A1E695DAC003EE7ED /* AppDelegate.m */,
 				B62D630C1E695DAC003EE7ED /* ViewController.h */,
 				B62D630D1E695DAC003EE7ED /* ViewController.m */,
+				B62D63211E6D0185003EE7ED /* WZShowViewController.h */,
+				B62D63221E6D0185003EE7ED /* WZShowViewController.m */,
+				B62D63241E6D01F7003EE7ED /* WZFormViewCore */,
 				B62D630F1E695DAC003EE7ED /* Main.storyboard */,
 				B62D63121E695DAC003EE7ED /* Assets.xcassets */,
 				B62D63141E695DAC003EE7ED /* LaunchScreen.storyboard */,
@@ -81,6 +96,19 @@
 				B62D631D1E69638B003EE7ED /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B62D63241E6D01F7003EE7ED /* WZFormViewCore */ = {
+			isa = PBXGroup;
+			children = (
+				B62D63251E6D021D003EE7ED /* WZModel.h */,
+				B62D63261E6D021D003EE7ED /* WZModel.m */,
+				B62D63281E6D0244003EE7ED /* WZView.h */,
+				B62D63291E6D0244003EE7ED /* WZView.m */,
+				B62D632B1E6D0263003EE7ED /* WZViewModel.h */,
+				B62D632C1E6D0263003EE7ED /* WZViewModel.m */,
+			);
+			path = WZFormViewCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62D63271E6D021D003EE7ED /* WZModel.m in Sources */,
 				B62D630E1E695DAC003EE7ED /* ViewController.m in Sources */,
 				B62D630B1E695DAC003EE7ED /* AppDelegate.m in Sources */,
+				B62D63231E6D0185003EE7ED /* WZShowViewController.m in Sources */,
 				B62D63081E695DAC003EE7ED /* main.m in Sources */,
+				B62D632D1E6D0263003EE7ED /* WZViewModel.m in Sources */,
+				B62D632A1E6D0244003EE7ED /* WZView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
